@@ -18,4 +18,4 @@ Il tutor deve fornire i seguenti dati per la compilazione dei moduli sopra elenc
 
 <br>
 
-Per maggiori informazioni, si rimanda ai riferimenti normativi sul [sito ufficiale del MIUR](http://www.alternanza.miur.gov.it/scuole_come-organizzare.html).
+Per maggiori informazioni, si rimanda al [sito ufficiale del MIUR](http://www.alternanza.miur.gov.it/scuole_come-organizzare.html).
