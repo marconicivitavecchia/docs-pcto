@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Documentazione docente per PCTO</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="prima.html"><strong aria-hidden="true">1.</strong> Prima dell'attività</a></li><li><a href="durante.html"><strong aria-hidden="true">2.</strong> Durante l'attività</a></li><li><a href="dopo.html"><strong aria-hidden="true">3.</strong> Dopo l'attività</a></li><li class="spacer"></li><li><a href="competenze.html"><strong aria-hidden="true">4.</strong> Competenze</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Documentazione docente per PCTO</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#prima-dellattività" id="prima-dellattività">Prima dell'attività</a></h1>
+<p>Prima dell'inizio dell'attività vanno compilati:</p>
+<ol>
+<li>
+<p><strong>Progetto Formativo</strong> (<a href="./assets/progetto_formativo.docx">doc</a>, <a href="./assets/progetto_formativo.odt">odt</a>, <a href="./assets/progetto_formativo.pdf">pdf</a>) compilato per ogni studente o studentessa, serve ad identificare chiaramente tutti gli attori e la natura dell'attività di formazione. Deve essere firmato da:</p>
+<ul>
+<li>studente o studentessa (e dal genitore, se minorenne)</li>
+<li>azienda</li>
+<li>docente referente (nel campo &quot;Ente promotore&quot;)</li>
+</ul>
+</li>
+<li>
+<p><strong>Patto Formativo</strong> (<a href="./assets/patto_formativo_adesione_alunno.doc">doc</a>, <a href="./assets/patto_formativo_adesione_alunno.odt">odt</a>, <a href="./assets/patto_formativo_adesione_alunno.pdf">pdf</a>) compilato per ogni studente o studentessa in cui questi si impegna a rispettare determinati obblighi, a conseguire le competenze in esito al percorso e a svolgere le attività secondo gli obiettivi. Deve essere firmato da:</p>
+<ul>
+<li>studente o studentessa (e dal genitore, se minorenne)</li>
+</ul>
+</li>
+</ol>
+<p>Il tutor deve fornire i seguenti dati per la compilazione dei moduli sopra elencati:</p>
+<ul>
+<li>nome dell'azienda o ente ospitante l'attività</li>
+<li>sede del tirocinio</li>
+<li>periodo del tirocinio</li>
+<li>numero complessivo di ore</li>
+<li>obiettivi, modalità ed attività del tirocinio</li>
+<li>nome del tutor scolastico</li>
+</ul>
+<br>
+<p>Per maggiori informazioni, si rimanda al <a href="http://www.alternanza.miur.gov.it/scuole_come-organizzare.html">sito ufficiale del MIUR</a>.</p>
+<h1><a class="header" href="#durante-lattività" id="durante-lattività">Durante l'attività</a></h1>
+<p><strong>Solo per gli stage in azienda</strong>, per ogni studente va compilato il <a href="./assets/registro_personale_studente.docx">registro personale</a>.</p>
+<h1><a class="header" href="#dopo-lattività" id="dopo-lattività">Dopo l'attività</a></h1>
+<p>Dopo l'attività, entro la fine dell'anno scolastico vanno consegnati i seguenti documenti.</p>
+<ul>
+<li>Valutazione delle competenze (<a href="./assets/valut.competenze.docx">doc</a>,<a href="./assets/valut.competenze.odt">odt</a>,<a href="./assets/valut.competenze.odt">pdf</a>) va compilato per ogni studente; per le competenze da inserire, si può far riferimento al <a href="./competenze.html">questa</a> pagina.</li>
+</ul>
+<h1><a class="header" href="#competenze-da-inserire-nel-progetto-formativo" id="competenze-da-inserire-nel-progetto-formativo">Competenze da inserire nel progetto formativo</a></h1>
+<h2><a class="header" href="#per-tutti-obbligatorio" id="per-tutti-obbligatorio">Per tutti obbligatorio</a></h2>
+<ul>
+<li>Conoscenza delle norme di prevenzione infortuni e orientamento al lavoro</li>
+</ul>
+<h2><a class="header" href="#competenze-di-carattere-generale" id="competenze-di-carattere-generale">Competenze di carattere generale</a></h2>
+<ul>
+<li>Realizzazione – Gestionali: orientamento ai risultati, spirito di iniziativa, stesura di rapporti e relazioni, flessibilità operativa</li>
+<li>Relazionali: disponibilità ai rapporti interpersonali, comunicazione verbale, lavoro in gruppo, impegno verso l’organizzazione</li>
+<li>Affidabilità e puntualità</li>
+</ul>
+<h2><a class="header" href="#istituto-tecnico" id="istituto-tecnico">Istituto tecnico</a></h2>
+<h3><a class="header" href="#articolazione-informatica" id="articolazione-informatica">Articolazione informatica</a></h3>
+<ul>
+<li><em>(ancora da inserire!)</em></li>
+</ul>
+<h3><a class="header" href="#articolazione-elettronica-ed-elettrotecnica" id="articolazione-elettronica-ed-elettrotecnica">Articolazione elettronica ed elettrotecnica</a></h3>
+<ul>
+<li>Manutenzione e Riparazione di apparati elettrici</li>
+<li>Conoscere l’organizzazione del lavoro nei grandi impianti industriali</li>
+</ul>
+<h3><a class="header" href="#articolazione-meccanica-e-meccatronica" id="articolazione-meccanica-e-meccatronica">Articolazione meccanica e meccatronica</a></h3>
+<ul>
+<li>Manutenzione e Riparazione di apparati meccanici </li>
+<li>Conoscere l’organizzazione del lavoro nei grandi impianti industriali</li>
+</ul>
+<h2><a class="header" href="#liceo-scientifico" id="liceo-scientifico">Liceo Scientifico</a></h2>
+<h3><a class="header" href="#opzione-scienze-applicate" id="opzione-scienze-applicate">Opzione Scienze Applicate</a></h3>
+<ul>
+<li>Promozione della cultura del Volontariato</li>
+</ul>
+<h3><a class="header" href="#indirizzo-sportivo" id="indirizzo-sportivo">Indirizzo Sportivo</a></h3>
+<ul>
+<li><em>(ancora da inserire!)</em></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
