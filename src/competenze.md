@@ -1,9 +1,10 @@
 # Competenze da inserire nel progetto formativo
 
-## Per tutti obbligatorio
-- Conoscenza delle norme di prevenzione infortuni e orientamento al lavoro
+## Competenze obbligatorie per tutte le attività
+- Conoscenza delle norme di prevenzione infortuni
 
 ## Competenze di carattere generale
+- Orientamento al lavoro
 - Realizzazione – Gestionali: orientamento ai risultati, spirito di iniziativa, stesura di rapporti e relazioni, flessibilità operativa
 - Relazionali: disponibilità ai rapporti interpersonali, comunicazione verbale, lavoro in gruppo, impegno verso l’organizzazione
 - Affidabilità e puntualità
