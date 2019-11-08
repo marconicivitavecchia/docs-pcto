@@ -9,15 +9,19 @@
 - Affidabilità e puntualità
 
 ## Istituto tecnico
+
 ### Articolazione informatica
-- _(ancora da inserire!)_
+- Realizzazione e manutenzione di una rete di computer
+- Realizzazione di applicativi software
+- Comprensione dell'organizzazione del lavoro in aziende che sviluppano software
+
 
 ### Articolazione elettronica ed elettrotecnica
 - Manutenzione e Riparazione di apparati elettrici
 - Conoscere l’organizzazione del lavoro nei grandi impianti industriali
 
 ### Articolazione meccanica e meccatronica
-- Manutenzione e Riparazione di apparati meccanici 
+- Manutenzione e Riparazione di apparati meccanici
 - Conoscere l’organizzazione del lavoro nei grandi impianti industriali
 
 ## Liceo Scientifico
